@@ -64,7 +64,7 @@
 
         /* Hero Section */
         #hero {
-            background-image: url("https://i.imgur.com/uZgujni.jpeg");
+
             background-size: cover;
             height: 500px;
             text-align: center;
