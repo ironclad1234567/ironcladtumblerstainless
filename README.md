@@ -63,18 +63,7 @@
         }
 
         /* Hero Section */
-        #hero {
-
-            background-size: cover;
-            height: 500px;
-            text-align: center;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-blur: 10px;
-            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8);
-        }
+      
 
         .hero-text h2 {
             font-size: 4em;
@@ -279,4 +268,5 @@
         <p>&copy; 2025 Iron Clad Tumblers. All rights reserved.</p>
     </footer>
 </body>
-</html># ironcladtumblerstainless
+</html>
+# ironcladtumblerstainless
