@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Iron Clad Tumblers</title>
+    <title>Iron Clad</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* General Styles */
@@ -15,162 +15,136 @@
         }
 
         body {
-            font-family: 'Candara', Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #111;
-            color: #e6e6e6;
-            font-weight: bold;
+            background-color: #0b0b0b;
+            color: white;
         }
 
         header {
-            background-color: #222;
-            padding: 20px 0;
+            background-color: #1e1e1e;
+            padding: 10px 0;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
         }
 
-        header nav .logo h1 {
-            font-size: 3em;
-            color: #ff6600;
+        header .logo h1 {
+            font-size: 2.5em;
+            color: #e63946;
+            font-family: 'Impact', sans-serif;
             text-transform: uppercase;
-            letter-spacing: 4px;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            letter-spacing: 3px;
         }
 
-        header nav .nav-links {
+        header .nav-links {
             list-style: none;
             display: flex;
             justify-content: center;
-            padding-top: 15px;
+            padding: 10px 0;
         }
 
-        header nav .nav-links li {
-            margin: 0 20px;
+        header .nav-links li {
+            margin: 0 15px;
         }
 
-        header nav .nav-links a {
-            color: #e6e6e6;
+        header .nav-links a {
+            color: white;
             text-decoration: none;
             font-size: 1.2em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: color 0.3s ease;
-        }
-
-        header nav .nav-links a:hover {
-            color: #ff6600;
         }
 
         /* Hero Section */
-      
+        #hero {
+            background-image: url('https://images.unsplash.com/photo-1578367680904-026e165ee621?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080'); 
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         .hero-text h2 {
-            font-size: 4em;
+            font-size: 3.5em;
+            font-family: 'Impact', sans-serif;
+            letter-spacing: 2px;
             margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            font-weight: bold;
-            color: #ff6600;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
         .hero-text p {
             font-size: 1.5em;
-            letter-spacing: 2px;
-            font-weight: normal;
-            text-transform: capitalize;
-        }
-
-        .hero-text img {
-            max-width: 70%;
-            height: auto;
-            margin-top: 30px;
-            border: 5px solid #ff6600;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
         }
 
         /* About Section */
         #about {
-            padding: 60px;
+            padding: 40px;
             background-color: #222;
             text-align: center;
-            color: #e6e6e6;
-            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.6);
         }
 
-        /* Product Section */
+        #about h2 {
+            font-size: 2.5em;
+            color: #e63946;
+            margin-bottom: 20px;
+        }
+
+        /* Products Section */
         #products {
-            padding: 60px;
+            padding: 40px;
             background-color: #333;
-            color: #e6e6e6;
+            text-align: center;
         }
 
         .product-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 30px;
         }
 
         .product {
             width: 30%;
-            margin-bottom: 20px;
+            margin: 15px;
             text-align: center;
             background-color: #444;
-            padding: 25px;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
         }
 
         .product img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
-            border: 3px solid #ff6600;
+        }
+
+        .product h3 {
+            color: #e63946;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #ccc;
         }
 
         .product .price {
-            font-size: 1.5em;
-            color: #ff6600;
-            margin: 15px 0;
-            font-weight: bold;
-        }
-
-        .product .add-to-cart {
-            background-color: #ff6600;
-            color: #111;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
             font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .product .add-to-cart:hover {
-            background-color: #e65c00;
+            color: #f4a261;
+            margin: 10px 0;
         }
 
         /* Contact Section */
         #contact {
-            padding: 60px;
+            padding: 40px;
             background-color: #222;
             text-align: center;
-            color: #e6e6e6;
-            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
         }
 
         #contact h2 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            letter-spacing: 5px;
-            font-weight: bold;
-            color: #ff6600;
-        }
-
-        #contact p {
-            font-size: 1.2em;
+            font-size: 2.5em;
+            color: #e63946;
             margin-bottom: 20px;
         }
 
@@ -178,88 +152,129 @@
             list-style: none;
             display: flex;
             justify-content: center;
-            padding-top: 20px;
+            flex-wrap: wrap;
+            padding: 20px 0;
         }
 
         #contact .social-icons li {
-            margin: 0 20px;
+            margin: 10px;
         }
 
         #contact .social-icons a {
-            color: #e6e6e6;
-            font-size: 2.5em;
+            color: white;
+            font-size: 2em;
             text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        #contact .social-icons a:hover {
-            color: #ff6600;
         }
 
         /* Footer */
         footer {
-            background-color: #111;
-            padding: 15px;
+            background-color: #1e1e1e;
+            padding: 10px;
             text-align: center;
-            color: #e6e6e6;
-            font-size: 1em;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.8);
+            color: white;
         }
 
         footer p {
-            letter-spacing: 1px;
+            font-size: 1em;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header .nav-links {
+                flex-direction: column;
+            }
+
+            header .nav-links li {
+                margin: 10px 0;
+            }
+
+            #hero {
+                height: 400px;
+            }
+
+            .hero-text h2 {
+                font-size: 2em;
+            }
+
+            .hero-text p {
+                font-size: 1em;
+            }
+
+            .product {
+                width: 80%;
+                margin: 15px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header .logo h1 {
+                font-size: 1.8em;
+            }
+
+            .hero-text h2 {
+                font-size: 1.8em;
+            }
+
+            .hero-text p {
+                font-size: 0.9em;
+            }
+
+            .product {
+                width: 90%;
+            }
+
+            #contact h2 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <h1>Iron Clad Tumblers</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Our Product</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <h1>Iron Clad</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
 
     <section id="hero">
         <div class="hero-text">
             <h2>Kekuatan dan Gaya Dalam Satu Genggaman</h2>
-            <p>Premium Tumblers with a Hardcore Edge</p>
+            <p>Strong Tumblers for Stronger Lives</p>
         </div>
     </section>
 
     <section id="about">
-        <h2>About Us</h2>
-        <p><strong>Ironclad:</strong> Menggunakan istilah "ironclad" yang berarti kuat dan tidak tertembus, menggambarkan kualitas tumbler. Ironclad: Teman setia untuk gaya hidup aktifmu. Tumbler metal yang kuat dan stylish ini menjaga minumanmu tetap dingin atau panas, di mana pun kamu berada. Desain ergonomis dan portabilitasnya yang tinggi membuatnya sempurna untuk dibawa ke gym, perjalanan, atau aktivitas luar ruangan lainnya. Tunjukkan kekuatan dan gayamu dengan Ironclad!</p>
+        <h2>About Iron Clad</h2>
+        <p>Menggunakan Istilah "IRONCLAD"
+yang Berarti Kuat dan Tidak Tertembus,
+Menggambarkan Kualitas Tumbler. IRONCLAD: Teman Setia Untuk Gaya Hidup Aktifmu.  Tumbler Metal yang Kuat dan Stylish ini Menjaga Minumanmu Tetap Dingin atau Panas, di Mana pun Kamu Berada.</p>
     </section>
 
     <section id="products">
-        <h2>Our Product</h2>
+        <h2>Our Products</h2>
         <div class="product-container">
             <div class="product">
-                <img src="https://i.imgur.com/Ok9W7K0.jpeg" alt="Ironclad Tumbler">
-                <h3>Ironclad Metal Tumbler</h3>
-                <p>Desain ergonomis dan bahan berkualitas tinggi untuk tumbler yang kuat dan tahan lama. Menjaga minuman tetap dingin atau panas sepanjang hari.</p>
-                <p class="price">Rp. 85.000</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <img src="https://i.imgur.com/Ok9W7K0.jpeg" alt="Tumbler Metal">
+                <h3>Iron Clad Tumbler</h3>
+                <p>Desain ergonomis dengan bahan berkualitas tinggi yang menjaga suhu minuman sepanjang hari.</p>
+                <p class="price">Rp 85.000</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Follow us on social media or reach out via the platforms below:</p>
         <ul class="social-icons">
             <li><a href="https://www.instagram.com/ironcladtumbler/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=61571167660047&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a></li>
             <li><a href="https://wa.me/6285652184533" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-            <li><a href="mailto:ironcladtumblerstainless" target="_blank"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="https://youtube.com/@ironclad-h3v?si=SPHawnPFVRqJUi5r" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61571167660047&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="mailto:ironcladtumbler@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
             <li><a href="https://www.tiktok.com/@ironcladtumbler" target="_blank"><i class="fab fa-tiktok"></i></a></li>
         </ul>
     </section>
